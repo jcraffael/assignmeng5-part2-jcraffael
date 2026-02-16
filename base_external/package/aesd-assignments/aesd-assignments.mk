@@ -24,7 +24,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	#$(INSTALL) -d 0755 $(@D)/conf/ $(TARGET_DIR)/etc/finder-app/conf/
 	#$(INSTALL) -m 0755 $(@D)/conf/* $(TARGET_DIR)/etc/finder-app/conf/
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin	
-	$(INSTALL) -d 0755 $(TARGET_DIR)/etc/init.d/S99aesdsocket	
+	#$(INSTALL) -d 0755 $(TARGET_DIR)/etc/init.d/S99aesdsocket	
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket	
 	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment5/* $(TARGET_DIR)/bin
 endef
